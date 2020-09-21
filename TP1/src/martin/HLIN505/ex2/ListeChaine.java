@@ -10,6 +10,9 @@ public class ListeChaine {
 		racine = new Node(val) ;
 	}
 	
+	public ListeChaine() {
+		racine = null;
+	}
 	
 	public Node getNext() {
 		return racine.next;
@@ -51,7 +54,20 @@ public class ListeChaine {
 	}
 	
 	
-	
+	public ListeChaine reverse() {
+		ListeChaine newListe = new ListeChaine() ;
+		
+		Node next = racine;
+		while(next != null) {
+			newListe.addToHead(next.value);
+			next = next.next ;
+		}
+		
+		
+		
+		
+		return newListe ;
+	}
 	
 	
 	

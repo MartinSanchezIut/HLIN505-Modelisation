@@ -14,7 +14,8 @@ public class main {
 		lc.addToHead(6);
 		lc.addToHead(7);
 		System.out.println(lc.toString());
-
+		
+		System.out.println(lc.reverse().toString());
 
 	}
 }
