@@ -61,11 +61,7 @@ public class ListeChaine {
 		while(next != null) {
 			newListe.addToHead(next.value);
 			next = next.next ;
-		}
-		
-		
-		
-		
+		}		
 		return newListe ;
 	}
 	
