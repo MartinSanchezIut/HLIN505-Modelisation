@@ -54,6 +54,7 @@ public class ExpComp {
 		*/
 		ExpComp exp = (ExpComp) o ;		
 		return Objects.equals(this.eval(), exp.eval());
+		//return this.eval() == exp.eval();
 	}
 	
 	
