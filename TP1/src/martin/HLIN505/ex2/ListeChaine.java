@@ -46,9 +46,12 @@ public class ListeChaine {
 	
 	public void addToHead(int nouveau) {
 		Node cache = racine ;
-		
+		int oldSize = this.size() ;
+
 		racine = new Node(nouveau) ;
 		racine.next = cache;
+
+		assert this.size() == oldSize+1;
 		
 		
 	}
@@ -61,7 +64,8 @@ public class ListeChaine {
 		while(next != null) {
 			newListe.addToHead(next.value);
 			next = next.next ;
-		}		
+		}
+		assert this.size() == newListe.size() ;
 		return newListe ;
 	}
 	
