@@ -26,4 +26,12 @@ public class Main {
         }
 
     }
+
+
+    public @interface Todo{
+            String type() ;
+            int version() ;
+            int dureeTache() ;
+
+    }
 }
