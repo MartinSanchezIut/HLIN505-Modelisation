@@ -2,6 +2,8 @@ package fac.martin.ex1;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Target;
 
 public class Main {
 
@@ -27,9 +29,10 @@ public class Main {
 
     }
 
-
+    enum TypeTache {WRITE, SIMPLIFY, REFACTOR, TEST} ;
+    @Target({ElementType.CONSTRUCTOR, ElementType.METHOD})
     public @interface Todo{
-            String type() ;
+            TypeTache type() ;
             int version() ;
             int dureeTache() ;
 
