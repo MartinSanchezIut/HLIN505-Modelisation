@@ -13,7 +13,7 @@ public class Pochette<A extends Document> {
         this.listDoc = new ArrayList<>();
     }
 
-    public void transferer(Pochette<A> pochette) throws Exception {
+    public void transferer(Pochette<? super A> pochette) throws Exception {
         for (A a: listDoc) {
             pochette.addDoc(a);
         }
