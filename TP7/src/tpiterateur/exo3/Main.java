@@ -23,7 +23,14 @@ public class Main {
 		
 		
 		CollectionFeuillesSalaire collec = new CollectionFeuillesSalaire(feuilles);
-		collec.print();
+		//collec.print();
+		//collec.print2();
+		collec.tri();
+		collec.tri2();
+		collec.tri3();
+
+		System.out.println(collec.feuillesEntreprise("enedis")) ;
+		System.out.println(collec.feuillesEmploye("Ju")) ;
 	}
 
 }
