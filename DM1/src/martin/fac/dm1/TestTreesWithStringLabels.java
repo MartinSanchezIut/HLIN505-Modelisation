@@ -9,9 +9,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class TestTreesWithStringLabels {
 
-    Node root=new Node("root");
-    Node right;
-    Node left;
+    LNode<String> root=new LNode<>("root");
+    LNode<String> right;
+    LNode<String> left;
 
     @BeforeEach
     public void init() {
@@ -31,7 +31,7 @@ class TestTreesWithStringLabels {
 
     @Test
     void testLTrees6nodes() {
-        Node autre=left.addNewLeftNode("fils3", "3");
+        LNode<String> autre= left.addNewLeftNode("fils3", "3");
         autre.addNewLeftNode("fils4", "4");
         autre.addNewRightNode("fils5", "5");
         assertEquals("root 1 fils1 3 fils3 4 fils4 5 fils5 2 fils2", root.dfsdump());

@@ -10,8 +10,7 @@ public class Edge {
         return label;
     }
 
-    public Edge(String label, Node father,
-                Node son) {
+    public Edge(String label, Node father, Node son) {
         this.label=label;
         this.father = father;
         this.son = son;

@@ -1,6 +1,7 @@
 package martin.fac.dm1;
 
 public abstract class LabelledElement<TypeLabel> {
+
     TypeLabel label;
 
     public LabelledElement(TypeLabel label) {
