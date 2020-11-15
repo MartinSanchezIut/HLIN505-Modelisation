@@ -41,4 +41,8 @@ public class LNode<Type> extends LabelledElement<Type> implements Iterable<LNode
     public Iterator<LNode<Type>> iterator() {
         return new LNodeIterator<Type>(this);
     }
+
+    public LEdge<?> getLeftEdge() {
+        return leftEdge;
+    }
 }

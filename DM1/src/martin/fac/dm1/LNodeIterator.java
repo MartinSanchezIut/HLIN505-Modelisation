@@ -2,7 +2,6 @@ package martin.fac.dm1;
 
 import java.util.Iterator;
 import java.util.Stack;
-import java.util.function.Consumer;
 
 public class LNodeIterator<T> implements Iterator<LNode<T>> {
 
