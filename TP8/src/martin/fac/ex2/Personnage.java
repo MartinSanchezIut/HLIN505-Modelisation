@@ -22,6 +22,7 @@ public abstract class Personnage {
 		return nom;
 	}
 
+	@Todo(kind = Todo.TaskKind.WRITE, version="1.1.0", duration=2)
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
@@ -30,6 +31,7 @@ public abstract class Personnage {
 		return nbPoints;
 	}
 
+	@Todo(kind = Todo.TaskKind.WRITE, version="1.1.0", duration=2)
 	public void setNbPoints(int nbPoints) {
 		this.nbPoints = nbPoints;
 	}
@@ -38,10 +40,18 @@ public abstract class Personnage {
 		return nbVies;
 	}
 
+	@Todo(kind = Todo.TaskKind.WRITE, version="1.1.0", duration=2)
 	public void setNbVies(int nbVies) {
 		this.nbVies = nbVies;
 	}
-	
-	
 
+
+	@Override
+	public String toString() {
+		return "Personnage{" +
+				"nom='" + nom + '\'' +
+				", nbPoints=" + nbPoints +
+				", nbVies=" + nbVies +
+				'}';
+	}
 }
